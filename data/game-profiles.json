@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "games": [
+    {
+      "id": "valorant",
+      "displayName": "Valorant",
+      "category": "fps",
+      "fov": { "type": "na", "locked": true, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": ["hip"] },
+      "supportsOverlayCrosshair": true,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"], "assumptions": "FOV in-game traité comme NA pour v1" }
+    },
+    {
+      "id": "cs2",
+      "displayName": "Counter-Strike 2",
+      "category": "fps",
+      "fov": { "type": "na", "locked": false, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": ["hip"] },
+      "supportsOverlayCrosshair": true,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"], "assumptions": "FOV géré via paramètres utilisateur ultérieurement" }
+    },
+    {
+      "id": "apex",
+      "displayName": "Apex Legends",
+      "category": "fps",
+      "fov": { "type": "na", "locked": false, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": ["hip","ads"] },
+      "supportsOverlayCrosshair": true,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"] }
+    },
+    {
+      "id": "fortnite",
+      "displayName": "Fortnite",
+      "category": "fps",
+      "fov": { "type": "na", "locked": true, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": ["hip","ads"] },
+      "supportsOverlayCrosshair": true,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"], "assumptions": "FOV traité comme NA en v1" }
+    },
+    {
+      "id": "bf6",
+      "displayName": "Battlefield 6",
+      "category": "fps",
+      "fov": { "type": "na", "locked": false, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": ["hip","ads","scope"] },
+      "supportsOverlayCrosshair": true,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"] }
+    },
+    {
+      "id": "lol",
+      "displayName": "League of Legends",
+      "category": "moba",
+      "fov": { "type": "na", "locked": true, "baseAspect": "16:9" },
+      "sensitivity": { "unit": "ratio", "range": { "min": 0.01, "max": 10.0 }, "adsModes": [] },
+      "supportsOverlayCrosshair": false,
+      "converter": { "pivot": "cm360", "methodsSupported": ["MDH","MDV","360dist"], "assumptions": "Convertisseur neutralisé (MOBA) — métriques distinctes" }
+    }
+  ]
+}

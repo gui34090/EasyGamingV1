@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EasyGaming Game Profiles v1",
+  "type": "object",
+  "required": ["version","games"],
+  "properties": {
+    "version": { "type": "string" },
+    "games": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id","displayName","category","fov","sensitivity","supportsOverlayCrosshair","converter"],
+        "properties": {
+          "id": { "type": "string" },
+          "displayName": { "type": "string" },
+          "category": { "type": "string", "enum": ["fps","moba"] },
+          "fov": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "locked": { "type": "boolean" },
+              "baseAspect": { "type": "string" }
+            }
+          },
+          "sensitivity": {
+            "type":"object",
+            "properties":{
+              "unit":{"type":"string"},
+              "range":{"type":"object","properties":{"min":{"type":"number"},"max":{"type":"number"}}},
+              "adsModes":{"type":"array","items":{"type":"string"}}
+            }
+          },
+          "supportsOverlayCrosshair": { "type": "boolean" },
+          "converter": { "type":"object" }
+        }
+      }
+    }
+  }
+}
