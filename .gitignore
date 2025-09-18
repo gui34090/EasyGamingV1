@@ -1,0 +1,22 @@
+# Build
+bin/
+obj/
+artifacts/
+*.user
+*.suo
+
+# VS
+.vs/
+*.userprefs
+
+# Logs
+*.log
+*.etl
+*.jsonl
+
+# Packages
+*.nupkg
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Allow any 1.7.x patch -->
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="[1.7.0,1.8.0)" />
+    <PackageVersion Include="Microsoft.WindowsAppRuntime.Bootstrap.Net" Version="[1.7.0,1.8.0)" />
+    <PackageVersion Include="System.Drawing.Common" Version="[8.0.0,9.0.0)" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="[8.0.0,9.0.0)" />
+    <PackageVersion Include="xunit" Version="[2.7.0,3.0.0)" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="[2.5.7,3.0.0)" />
+    <PackageVersion Include="coverlet.collector" Version="[6.0.0,7.0.0)" />
+  </ItemGroup>
+</Project>

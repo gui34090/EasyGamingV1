@@ -1,0 +1,12 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+charset = utf-8
+end_of_line = lf
+
+[*.{cs,csproj}]
+dotnet_diagnostic.CA1416.severity = warning
+dotnet_style_null_propagation = true:suggestion
